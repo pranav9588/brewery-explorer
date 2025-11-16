@@ -3,6 +3,7 @@ import 'package:brewery/ui/widgets/profile_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:brewery/core/utils/utilities.dart';
 
 class ProfileAboutScreen extends StatefulWidget {
   const ProfileAboutScreen({super.key});
@@ -56,14 +57,14 @@ class _ProfileAboutScreenState extends State<ProfileAboutScreen>
   }
 
   Future<void> _openSource() async {
-    const repo = 'https://github.com/pranav9588/GraphQL-with-Apollo';
-    await _launchUrl(repo);
+    const repo = 'https://github.com/pranav9588/brewery-explorer';
+    await Utilities.launchURL(repo);
   }
 
   Future<void> _contactAuthor() async {
     const email =
         'mailto:pranav.patel2001@gmail.com?subject=Brewery%20App%20Feedback';
-    await _launchUrl(email);
+    await Utilities.launchURL(email);
   }
 
   void _shareText(String text) {

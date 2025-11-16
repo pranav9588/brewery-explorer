@@ -1,5 +1,6 @@
 import 'package:brewery/ui/widgets/profile_header.dart';
 import 'package:flutter/material.dart';
+import 'package:brewery/core/utils/utilities.dart';
 
 class ProfileTab extends StatelessWidget {
   final void Function(String text) onShare;
@@ -52,7 +53,7 @@ high-quality deliverables that meet industry demands.''',
               subtitle: const Text(email),
               trailing: IconButton(
                 icon: const Icon(Icons.open_in_new),
-                onPressed: () => onOpenUrl('mailto:$email'),
+                onPressed: () => Utilities.launchURL('mailto:$email'),
               ),
             ),
           ),
@@ -66,7 +67,7 @@ high-quality deliverables that meet industry demands.''',
               subtitle: const Text('Tech blogs & tutorials'),
               trailing: IconButton(
                 icon: const Icon(Icons.open_in_new),
-                onPressed: () => onOpenUrl(medium),
+                onPressed: () => Utilities.launchURL(medium),
               ),
             ),
           ),
