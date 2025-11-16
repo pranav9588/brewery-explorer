@@ -1,16 +1,47 @@
-# brewery
+# Brewery Explorer
 
-A new Flutter project.
+Brewery Explorer is a Flutter application that helps users discover breweries around the world using the Open Brewery API. It provides browsing, searching, filtering, and a detail view with location links.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Browse breweries with name, type and location
+- Search breweries by name
+- Filter results by type and location
+- View detailed brewery information (address, phone, website, coordinates)
+- Open brewery location in external map apps
+- Pull-to-refresh and smooth scrolling
+- Modular, maintainable Flutter codebase
 
-A few resources to get you started if this is your first Flutter project:
+## Why this project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project is a practical example of a Flutter app that demonstrates:
+- REST API integration and JSON parsing
+- State management and navigation
+- Map integration and deep links
+- Clean project structure suitable for extension or as a portfolio piece
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Getting started
+
+### Prerequisites
+- Flutter SDK (version 2.x or higher recommended)
+- An Android or iOS device or emulator
+- Basic familiarity with Flutter and Dart
+
+### Install and run
+```bash
+git clone https://github.com/pranav9588/brewery-explorer.git
+cd brewery-explorer
+flutter pub get
+flutter run
+```
+
+### Project Structure 
+```bash
+lib/
+ ├── models/          # Data models
+ ├── services/        # API and business logic
+ ├── ui/              # UI pages and routes
+ ├── ui/widgets/      # Reusable UI components
+assets/               # Images, icons
+pubspec.yaml          # Dependencies and asset declarations
+```
