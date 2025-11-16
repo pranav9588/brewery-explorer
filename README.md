@@ -9,7 +9,6 @@ Brewery Explorer is a Flutter application that helps users discover breweries ar
 - Filter results by type and location
 - View detailed brewery information (address, phone, website, coordinates)
 - Open brewery location in external map apps
-- Pull-to-refresh and smooth scrolling
 - Modular, maintainable Flutter codebase
 
 ## Why this project
@@ -17,13 +16,13 @@ Brewery Explorer is a Flutter application that helps users discover breweries ar
 This project is a practical example of a Flutter app that demonstrates:
 - REST API integration and JSON parsing
 - State management and navigation
-- Map integration and deep links
+- Map integration
 - Clean project structure suitable for extension or as a portfolio piece
 
 ## Getting started
 
 ### Prerequisites
-- Flutter SDK (version 2.x or higher recommended)
+- Flutter SDK (version 3.30 or higher recommended)
 - An Android or iOS device or emulator
 - Basic familiarity with Flutter and Dart
 
@@ -45,3 +44,14 @@ lib/
 assets/               # Images, icons
 pubspec.yaml          # Dependencies and asset declarations
 ```
+## Screenshots
+
+Below are some previews of Brewery Explorer in action:
+
+<p align="center">
+  <img src="assets/home.png" width="280" alt="Home Screen">
+  <img src="assets/details.png" width="280" alt="Details Screen">
+  <img src="assets/favourites.png" width="280" alt="Favourites Screen">
+ <img src="assets/maps.png" width="280" alt="Map Screen">
+ <img src="assets/profile.png" width="280" alt="Profile & About Screen">
+</p>
