@@ -75,7 +75,7 @@ class _MainNavigationState extends State<MainNavigation> {
                   return Scaffold(
                     body: PageView(
                       controller: _pageController,
-                      physics: const NeverScrollableScrollPhysics(), // disable swipe; nav through bottom bar only
+                      physics: const NeverScrollableScrollPhysics(),
                       children: screens,
                     ),
                     bottomNavigationBar: BottomNavigationBar(

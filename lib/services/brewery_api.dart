@@ -8,7 +8,6 @@ class BreweryApiService {
   static const String _host = 'api.openbrewerydb.org';
   static const String _basePath = '/v1/breweries';
 
-  /// Generic list endpoint with optional filters and sorting.
   Future<List<Brewery>> listBreweries({
     int page = 1,
     int perPage = 50,
@@ -16,8 +15,8 @@ class BreweryApiService {
     String? byState,
     String? byType,
     String? byName,
-    String? sort, // 'asc' | 'desc' (applies to name sort by default)
-    LatLng? byDist, // if provided, will use by_dist=lat,lng
+    String? sort,
+    LatLng? byDist,
   }) async {
     final params = <String, String>{
       'page': page.toString(),
@@ -42,7 +41,6 @@ class BreweryApiService {
     }
   }
 
-  /// Search endpoint: /v1/breweries/search?query=...
   Future<List<Brewery>> searchBreweries(String query, {int page = 1, int perPage = 50}) async {
     final params = <String, String>{
       'query': query,
@@ -61,8 +59,6 @@ class BreweryApiService {
     }
   }
 
-  /// Fetch a single brewery by id (not guaranteed in API, but many endpoints support /breweries/{id})
-  /// If the API doesn't support this path in your version, you can remove this.
   Future<Brewery> fetchBreweryById(String id) async {
     final uri = Uri.https(_host, '$_basePath/$id');
     final res = await http.get(uri);
