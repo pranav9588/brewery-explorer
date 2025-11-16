@@ -45,3 +45,14 @@ lib/
 assets/               # Images, icons
 pubspec.yaml          # Dependencies and asset declarations
 ```
+## Screenshots
+
+Below are some previews of Brewery Explorer in action:
+
+<p align="center">
+  <img src="assets/home.png" width="280" alt="Home Screen">
+  <img src="assets/details.png" width="280" alt="Details Screen">
+  <img src="assets/favourites.png" width="280" alt="Favourites Screen">
+ <img src="assets/maps.png" width="280" alt="Map Screen">
+ <img src="assets/profile.png" width="280" alt="Profile & About Screen">
+</p>
